@@ -91,4 +91,6 @@ ns.Write(data, 0, data.Length);
 
 b) In a different folder, create a console application running as a TCP Client. The client should connect to the server and communicate, i.e. send data input in the console to the server.
 
+*Please notice: You should not name your project or class TcpClient, since it is the name of the class in the framework!*
+
 c) Work on the server from a) and implement a way to display messages from the connected client(s). Make an auto response to the client when data is received.
