@@ -1,4 +1,4 @@
-# DNP Exercises 04 - .NET Libraries
+# DNP Exercises 04 - .NET API
 
 ## Exercise 1, Streaming
 
