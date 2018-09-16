@@ -41,14 +41,14 @@ using System.IO;
 
 class Reader
 {
-    string FileName;
+    string fileName;
     public string Data { get; set; }
 
-    public Reader(string fn) { FileName = fn; }
+    public Reader(string fn) { fileName = fn; }
 
     public void Read()
     {
-        FileStream s = new FileStream(FileName, FileMode.Open);
+        FileStream s = new FileStream(fileName, FileMode.Open);
         StreamReader r = new StreamReader(s);
         Data = r.ReadToEnd();
         r.Close();
