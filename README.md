@@ -33,40 +33,36 @@ d) *Optional*: Instead of JSON, serialize your class `Person` using XML.
 
 *Hint: implement `IXmlSerializable` and have a look at `System.Xml` and `System.Xml.Serialization`*
 
-## Exercise 3, Threading
+## Exercise 3, Tasks
 
 Given the code below, which is a simple file reader class:
 
 ```csharp
 using System;
-using System.Threading;
 using System.IO;
 
 class Reader
 {
-    string fileName;
-    public string data;
+    string FileName;
+    public string Data { get; set; }
 
-    public Reader(string fn) { fileName = fn; }
+    public Reader(string fn) { FileName = fn; }
 
     public void Read()
     {
-        FileStream s = new FileStream(fileName, FileMode.Open);
+        FileStream s = new FileStream(FileName, FileMode.Open);
         StreamReader r = new StreamReader(s);
-        data = r.ReadToEnd();
+        Data = r.ReadToEnd();
         r.Close();
         s.Close();
     }
 }
 ```
 
-*Please notice the data read from the file is stored in a public string data. This is to make the assignment easier for you.*
-
-Write a C# program which uses the class above to compare two files. The files must be read in separate threads running in parallel.
+Write a C# program which uses the class above to compare two files. The files must be read in separate Tasks running in parallel.
 
 The comparison should be based upon actual data in the files and write whether the files are identical in terms of data or different.
 
-*Hint: You might use the `Join()` method to block the calling thread until the thread terminates.*
 
 ## Exercise 4, Networking
 
