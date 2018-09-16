@@ -6,8 +6,6 @@ a) Write a program that reads a text file and displays the number of words in th
 
 b) Write a program that reads a text file and displays the longest word in the file.
 
-c) ____More advanced streaming exercise____
-
 ## Exercise 2, Serialization
 
 Given the start of the class implementation below
