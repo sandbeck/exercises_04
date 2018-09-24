@@ -38,7 +38,6 @@ namespace ex1
                 }
                 return longest;
             }
-
         }
 
         private static int CountWords(string path)
