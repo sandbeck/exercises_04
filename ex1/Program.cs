@@ -12,7 +12,7 @@ namespace ex1
             try
             {
                 System.Console.WriteLine($"Longest word is: {LongestWord(Path)}");
-                Console.WriteLine($"Number of words in file: {CountWords(Path)}");
+                Console.WriteLine($"Number of words in file: {Count(Path)}");
             }
             catch (Exception e)
             {
@@ -41,7 +41,7 @@ namespace ex1
 
         }
 
-        private static int CountWords(string path)
+        private static int Count(string path)
         {
             using (StreamReader sr = new StreamReader(path))
             {
